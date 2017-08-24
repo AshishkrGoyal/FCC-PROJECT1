@@ -1,8 +1,15 @@
+var API = "https://fcc-weather-api.glitch.me/api/current?lat=35&lon=139";
+
 if(navigator.geolocation)
 {
+
+    $.getJSON(API,function (data) {
+        console.log(data);
+        console.log("Ashish");
+    });
     navigator.geolocation.getCurrentPosition(function (position) {
-        console.log(position.coords.latitude, position.coords.longitude);
-        prompt("Enter Number Here Ashish");
+        //console.log(position.coords.latitude, position.coords.longitude);
+        //prompt("Enter Number Here Ashish");
         //console.log("Ashish Goyal");
     })
 }
