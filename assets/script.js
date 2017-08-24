@@ -14,7 +14,7 @@ if(navigator.geolocation)
             console.log(data.main.temp, data.main.temp_max, data.main.temp_min, data.weather[0].icon);
             $("span.current_location").text(data.name + ", " + data.sys.country);
             $("span.temp").text(data.main.temp+" °C");
-            $("div.wind-speed").text(data.wind.speed+ "Km/h");
+            $("span.wind-speed").text(data.wind.speed+ "Km/h");
             $("div.weather-desc").text(data.weather[0].description);
             if(data.weather[0].icon)
             {
