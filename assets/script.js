@@ -10,8 +10,10 @@ if(navigator.geolocation)
             //console.log(data.main.temp);
             //console.log("Ashish");
             //console.log("Ashish your Request Has Been completed");
-            console.log(data.main.temp);
+            console.log(data.main.temp, data.main.temp_max, data.main.temp_min);
             $("span.temp").text(data.main.temp);
+            $("span.temp_max").text(data.main.temp_max);
+            $("span.temp_min").text(data.main.temp_min);
         });
     });
 
@@ -21,8 +23,7 @@ if(navigator.geolocation)
 
 
 //it is a nodeJS server for getting response in JSON format..
-/*
-var express = require('express');
+/*var express = require('express');
 var request = require('request');
 
 var app = express();
