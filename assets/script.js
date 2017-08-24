@@ -1,15 +1,16 @@
-/*
 if(navigator.geolocation)
 {
     navigator.geolocation.getCurrentPosition(function (position) {
         console.log(position.coords.latitude, position.coords.longitude);
-        console.log("Ashish Goyal");
+        prompt("Enter Number Here Ashish");
+        //console.log("Ashish Goyal");
     })
 }
-console.log("Ashish");*/
+//console.log("Ashish");
 
 
 //it is a nodeJS server for getting response in JSON format..
+/*
 var express = require('express');
 var request = require('request');
 
@@ -24,4 +25,4 @@ request("https://fcc-weather-api.glitch.me/api/current?lat=31.253925900000002&lo
     {
         console.log(JSON.parse(body));
     }
-});
+});*/
