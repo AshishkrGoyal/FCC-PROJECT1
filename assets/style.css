@@ -1,6 +1,6 @@
 body
 {
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.85);
     font-family: 'Open Sans', sans-serif;
     color: whitesmoke;
 }
@@ -22,9 +22,15 @@ h2
 }
 h3,p
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     letter-spacing: 1px;
     text-align: center;
+}
+.current-city h2 span
+{
+    color: lightgray;
+    font-size: 37px;
+    font-family: 'Nunito', 'Open Sans', sans-serif;
 }
 p
 {
@@ -42,6 +48,6 @@ img
     display: block;
     margin: 0 auto;
     margin-top: 5%;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
