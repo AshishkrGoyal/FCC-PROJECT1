@@ -10,10 +10,21 @@ if(navigator.geolocation)
             //console.log(data.main.temp);
             //console.log("Ashish");
             //console.log("Ashish your Request Has Been completed");
-            console.log(data.main.temp, data.main.temp_max, data.main.temp_min);
+            console.log(data);
+            console.log(data.main.temp, data.main.temp_max, data.main.temp_min, data.weather[0].icon);
+            $("span.current_location").text(data.name);
             $("span.temp").text(data.main.temp);
             $("span.temp_max").text(data.main.temp_max);
             $("span.temp_min").text(data.main.temp_min);
+            if(data.weather[0].icon)
+            {
+                $("div.weather-image").append("<img src="+data.weather[0].icon+">");
+            }
+            else
+            {
+                $("div.weather-image").append("<img src='./assets/weather.png'>");
+            }
+
         });
     });
 
