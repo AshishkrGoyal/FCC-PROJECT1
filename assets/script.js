@@ -7,8 +7,8 @@ if(navigator.geolocation)
         //prompt("Enter Number Here Ashish");
         //console.log("Ashish Goyal");
         $.getJSON("https://fcc-weather-api.glitch.me/api/current?lat="+position.coords.latitude+"&lon="+position.coords.longitude,function (data) {
-            console.log(data);
-            console.log("Ashish");
+            console.log(data.main);
+            //console.log("Ashish");
             console.log("Ashish your Request Has Been completed");
         });
     });
