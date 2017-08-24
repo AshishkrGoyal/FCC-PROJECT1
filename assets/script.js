@@ -12,10 +12,10 @@ if(navigator.geolocation)
             //console.log("Ashish your Request Has Been completed");
             console.log(data);
             console.log(data.main.temp, data.main.temp_max, data.main.temp_min, data.weather[0].icon);
-            $("span.current_location").text(data.name);
-            $("span.temp").text(data.main.temp);
-            $("span.temp_max").text(data.main.temp_max);
-            $("span.temp_min").text(data.main.temp_min);
+            $("span.current_location").text(data.name + ", " + data.sys.country);
+            $("span.temp").text(data.main.temp+" °C");
+            $("div.wind-speed").text(data.wind.speed+ "Km/h");
+            $("div.weather-desc").text(data.weather[0].description);
             if(data.weather[0].icon)
             {
                 $("div.weather-image").append("<img src="+data.weather[0].icon+">");
